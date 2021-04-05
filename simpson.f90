@@ -1,3 +1,14 @@
+! f(x) funksiyani [a,b] oraliqda integrallash
+! bu usul Simpson usuli deb ataladi.
+! Simpson usulida integralni sonli hisoblash 3-tartibli algebraik aniqlik darajasiga ega, ya'ni O(3)
+! Simpson usuli funksiyani interpolyatsion ko`phadning ikkinchi hadigacha yoyilgan holatda,
+! boshqacha aytganda parabolik interpolyatsiya orqali hisoblash imkonini beradi.
+! Umumiy holda Simpson usulida integrallash formulasi quyidagicha:
+!  _______________________________________________________
+! |                                                       |
+! |   F(x) = (b - a) / 6 (f(a) + 4 * f((a+b)/2) + f(b))   |
+! |_______________________________________________________|
+
 IMPLICIT NONE
 DOUBLE PRECISION    :: a,c,h,integral
 INTEGER             :: i,N
